@@ -13,38 +13,8 @@ public class IceCreamShop {
         this.name = name;
         this.locCord = locCord;
         setDistFromSource(calculateDistFromSource());
-    }
-    private double calculateDistFromSource() {
-    	
-    	/*
-    	
-    	distFromSource = (double) this.locCord.stream()
-    			.map(x->Math.sqrt(x^2)).peek(System.out::println)
-    			.flatMapToInt(IntStream::of)
-    	        .sum();
-    	        
-    	        
-    	        */
-    	
-    	
-    	/*
-    	
-    	
-    	distFromSource = this.locCord.stream()
-    			.map(x->Math.sqrt(x*x)).peek(System.out::println))
-                .flatMapToInt(IntStream::of)
-    	        .sum();
-    	
-    	*/
-    	
-    	/*
-    	
-    	distFromSource = (double) this.locCord.stream()
-    			.map(x->Math.sqrt(x*x)).peek(System.out::println)
-                .flatMap(IntStream::of)
-    	        .sum();
-    	
-    	*/
+        }
+       public double calculateDistFromSource() {
     	
     	
     	distFromSource = (double) this.locCord.stream()
@@ -54,22 +24,9 @@ public class IceCreamShop {
     	
     	double sqrtDist = Math.sqrt(distFromSource);
     	
-    	
-    	
-    	/*
-    	distFromSource = (double) this.locCord.stream().flatMapToInt(IntStream::of)
-    	        .sum();
-    	        
-    	        */
-    			/*
-    			int sum = counts.stream()
-    	        .flatMapToInt(IntStream::of)
-    	        .sum();
-    	        
-    	        */
     	return sqrtDist;
 		
-	}
+    }
 	public int getId() {
         return id;
     }
