@@ -1,0 +1,34 @@
+Given an array representing the locations of N destinations (that belongs to a particular type) in the city, implement an algorithm to find the nearest X  destinations to the customer's location.
+
+
+Input:
+
+	1. totalDestinations = total number of possible destinations in the customer's city
+	2. allLocations = a list of elements where each element consists of pair of integers representing the x and y coordinates of the destinations.
+	3. numDest = an integer representing the number of destinations that would be returned to the customer.
+
+
+Output
+
+Return a list of elements where each element of the list represents the x and y coordinates of nearest recommended destinations.
+
+Constraints:
+
+numDest <= totalDestinations
+
+
+The customer begins at the location [0,0].
+The distance from the customer's current location to a recommended destination (x,y) is the
+Square root of x^2 + y^2
+If there are ties then return any of the locations as long as you satisfy returning X nearby destinations.
+
+
+Sample Input:
+
+totalDestinations = 3;
+allLocations = [[1,2], [3,4], [1,-1]]
+numDest =2
+
+Sample output:
+
+[[1, -1],[1,2]]
