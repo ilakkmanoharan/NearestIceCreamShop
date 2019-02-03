@@ -51,20 +51,10 @@ public static void main(String[] args) {
 	     }
 	
 		
-		//findNearestOption2(allIceCreamShops, returnIcecreamShops);
-		
 		
 	}
 
-/*
 
-private static void findNearestOption2(List<IceCreamShop> allIceCreamShops, int returnIcecreamShops) {
-	
-	allIceCreamShops.stream().
-	
-}
-
-*/
 
 public static List<IceCreamShop> returnRecommendedXShops(List<IceCreamShop> allIceCreamShops, int recShops) {
 	
