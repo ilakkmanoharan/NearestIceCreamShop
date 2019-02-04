@@ -1,3 +1,8 @@
+/* Copyright (C) 2019 Ilakkuvaselvi Manoharan - All Rights Reserved
+ * 
+ */
+
+
 import java.util.List;
 import java.util.stream.IntStream;
 
